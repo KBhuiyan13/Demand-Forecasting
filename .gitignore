@@ -1,0 +1,72 @@
+@'
+# Python environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Secrets and local environment settings
+.env
+.env.*
+!.env.example
+
+# Datasets and generated data
+data/
+datasets/
+*.csv
+*.parquet
+*.feather
+*.pkl
+*.pickle
+*.joblib
+*.npy
+*.npz
+
+# Trained models and experiment artifacts
+models/
+artifacts/
+mlruns/
+mlartifacts/
+checkpoints/
+*.h5
+*.keras
+*.pt
+*.pth
+*.onnx
+*.cbm
+*.model
+
+# Logs and generated reports
+logs/
+*.log
+reports/generated/
+outputs/
+results/
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Build and packaging files
+build/
+dist/
+*.egg-info/
+
+# IDE and operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+'@ | Set-Content -Path .gitignore -Encoding utf8
